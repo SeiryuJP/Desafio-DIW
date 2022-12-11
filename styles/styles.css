@@ -1,0 +1,22 @@
+body {
+  background-color: #495579;
+}
+body img {
+  width: 100px;
+  height: 100px;
+}
+body .cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+body .cuerpo form > * {
+  margin-bottom: 10%;
+}
+body .cuerpo form > img {
+  margin-left: 20%;
+}
+body .cuerpo form > :last-child {
+  margin-left: 35%;
+}/*# sourceMappingURL=styles.css.map */

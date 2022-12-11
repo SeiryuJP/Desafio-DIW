@@ -1,0 +1,28 @@
+$colores: (
+    "fondo": #495579,
+    "primario":  #263159,
+    "fuente": #FFFF
+);
+
+body {
+    background-color: map-get($colores, "fondo");
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    .cuerpo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form > * {
+            margin-bottom: 10%;
+        }
+        form > img {
+            margin-left: 20%;
+        }
+        form > :last-child {
+            margin-left: 35%;
+        }
+        margin-top: 10%;
+    }
+}
