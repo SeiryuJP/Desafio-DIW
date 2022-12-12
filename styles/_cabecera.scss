@@ -1,19 +1,25 @@
 @mixin cabecera($colores) {
-    header {
+    .cabecera {
         background-color: map-get($colores, "primario");
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        #hamburger-menu {
-            margin-right: 1%;
-            .hamburger {
-                width: 50px;
-                height: 50px;
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            #hamburger-menu {
+                margin-right: 1%;
+                .hamburger {
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
-    }
-    header > img {
-        width: 100px;
-        height: 100px;
+        header > img {
+            width: 100px;
+            height: 100px;
+        }
+        span {
+            margin-left: 0.5%;
+            color: map-get($colores, "fuente");
+        }
     }
 }
