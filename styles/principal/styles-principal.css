@@ -1,0 +1,132 @@
+.menu-horizontal {
+  margin-right: 1%;
+}
+.menu-horizontal nav ul {
+  display: flex;
+}
+.menu-horizontal nav ul li {
+  display: block;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #263159;
+  margin: 1%;
+}
+.menu-horizontal nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+}
+.busqueda #search-button {
+  margin-right: 1%;
+  margin-left: 3%;
+}
+.busqueda #search-button img {
+  width: 25px;
+  height: 25px;
+}
+.busqueda #search-text {
+  display: none;
+}
+.busqueda img {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-vertical {
+  margin-right: 2%;
+}
+.menu-vertical nav ul li {
+  display: block;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #263159;
+  margin: 10%;
+}
+.menu-vertical nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.cabecera {
+  background-color: #495579;
+}
+.cabecera header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cabecera header #hamburger-menu {
+  margin-right: 1%;
+}
+.cabecera header #hamburger-menu .hamburger {
+  width: 50px;
+  height: 50px;
+}
+.cabecera header > img {
+  width: 100px;
+  height: 100px;
+}
+.cabecera span {
+  margin-left: 0.5%;
+  color: white;
+}
+
+.catalogo {
+  margin-top: 4%;
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.catalogo .articulo {
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.catalogo .articulo img {
+  height: 150px;
+  width: 200px;
+}
+.catalogo .articulo .rating {
+  display: grid;
+  float: right;
+}
+
+footer {
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  width: 99%;
+  color: white;
+}
+
+body {
+  background-color: #263159;
+}
+
+@media (min-width: 100px) and (max-width: 460px) {
+  .catalogo {
+    grid-template-columns: 100%;
+  }
+}
+@media (min-width: 460px) and (max-width: 730px) {
+  .catalogo {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (min-width: 730px) {
+  .catalogo {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+@media (max-width: 730px) {
+  .menu-horizontal {
+    display: none;
+  }
+}
+@media (min-width: 730px) {
+  #hamburger-menu {
+    display: none;
+  }
+}/*# sourceMappingURL=styles-principal.css.map */
