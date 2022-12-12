@@ -1,0 +1,17 @@
+@mixin itinerario($colores) {
+    .itinerario {
+        margin-top: 4%;
+        display: grid;
+        justify-content: space-evenly;
+        justify-items: center;
+        .articulo {
+            color: map-get($colores, "fuente");
+            img {
+                float: left;
+                margin: 2%;
+                height: 150px;
+                width: 200px;
+            }
+        }
+    }
+}

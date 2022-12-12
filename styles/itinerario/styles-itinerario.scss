@@ -1,5 +1,5 @@
 @import '../mixins/menu-horizontal', '../mixins/busqueda', '../mixins/menu-vertical';
-@import '../mixins/cabecera', '../mixins/catalogo', '../mixins/footer';
+@import '../mixins/cabecera', '../mixins/footer', '../mixins/itinerario';
 
 $colores: (
     "primario": #495579,
@@ -12,27 +12,13 @@ $colores: (
 @include menu-vertical($colores);
 @include cabecera($colores);
 @include footer($colores);
+@include itinerario($colores);
 
 body {
     background-color: map-get($colores, "fondo");
-    color: map-get($colores, "fuente");
     h1 {
+        color: map-get($colores, "fuente");
         text-align: center;
-    }
-    .catalogo {
-        margin-top: 4%;
-        display: grid;
-        justify-content: space-evenly;
-        justify-items: center;
-        .articulo {
-            color: map-get($colores, "fuente");
-            img {
-                float: left;
-                margin: 2%;
-                height: 150px;
-                width: 200px;
-            }
-        }
     }
     .separador {
         width: 100%;
@@ -40,6 +26,34 @@ body {
     footer {
         bottom: 0;
         background-color: map-get($colores, "primario");
+    }
+    .cuerpo  {
+        color: map-get($colores, "fuente");
+        margin: 2%;
+        img {
+            width: 400px;
+            height: 350px;
+            float: left;
+            margin: 0.5%
+        }
+        p {
+            text-align: justify;
+        }
+    }
+    .subCuerpo {
+        color: map-get($colores, "fuente");
+        h1 {
+            text-align: left;
+        }
+        hr {
+            border: none;
+            height: 5px;
+            background-color: map-get($colores, "primario");
+        }
+        textarea {
+            height: 10em;
+            width: 90%;
+        }
     }
 }
 
@@ -51,7 +65,7 @@ body {
 
 
 @media (min-width: 100px) and (max-width: 730px) {
-    .catalogo {
+    .itinerario {
         grid-template-columns: 100%;
     }
     footer {
@@ -60,7 +74,7 @@ body {
 }
 
 @media (min-width: 730px) {
-    .catalogo {
+    .itinerario {
         grid-template-columns: 30% 30% 30%;
     }
     .separador {
