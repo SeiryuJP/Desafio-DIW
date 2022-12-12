@@ -1,0 +1,9 @@
+@mixin footer($colores) {
+    footer {
+        bottom: 5%;
+        position: absolute;
+        text-align: center;
+        width: 99%;
+        color: map-get($colores, "fuente");
+    }
+}

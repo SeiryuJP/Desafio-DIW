@@ -1,0 +1,21 @@
+@mixin catalogo($colores) {
+    .catalogo {
+        margin-top: 4%;
+        display: grid;
+        justify-content: space-evenly;
+        justify-items: center;
+        .articulo {
+            justify-content: center;
+            img {
+                height: 150px;
+                width: 200px;
+            }
+            text-align: center;
+            color: map-get($colores, "fuente");
+            .rating {
+                display: grid;
+                float: right;
+            }
+        }
+    }
+}
