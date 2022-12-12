@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/Chaldea-logo.png">
     <link rel="stylesheet" href="../styles/styles-principal.css">
 </head>
 <body>
@@ -12,10 +13,11 @@
         <div class="busqueda">
             <a href="#" id="search-button"><img src="../assets/search-icon.png"></a>
             <input id="search-text" type="text">
-            <img src="../assets/Chaldea-logo.png">
+            <a href="../index.html"><img src="../assets/Chaldea-logo.png"></a>
             <h2>Finis Chaldea</h2>
         </div>
-        <div class="menu">
+        <a href="#" id="hamburger-menu"><img src="../assets/menu.png" class="hamburger"></a>
+        <div id="menu" class="menu-horizontal">
             <nav>
                 <ul>
                     <li><a href="#">Te recomendamos</a></li>
@@ -26,5 +28,6 @@
         </div>
     </header>
     <script src="../js/search.js"></script>
+    <script src="../js/hamburger-menu.js"></script>
 </body>
 </html>

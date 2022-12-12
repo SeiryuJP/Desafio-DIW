@@ -1,0 +1,21 @@
+@mixin busqueda() {
+    .busqueda {
+        display: flex;
+        align-items: center;
+        #search-button {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+            margin-right: 1%;
+            margin-left: 3%;
+        }
+        #search-text {
+            display: none;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

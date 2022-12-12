@@ -1,0 +1,19 @@
+@mixin menu-vertical($colores) {
+    .menu-vertical {
+        margin-right: 2%;
+        nav {
+            ul {
+                li {
+                    display: block;
+                    border: 1px solid rgb(255, 255, 255);
+                    background-color: map-get($colores, "fondo");
+                    margin: 10%;
+                    a {
+                        text-decoration: none;
+                        color: map-get($colores, "fuente");
+                    }
+                }
+            }
+        }
+    }
+}

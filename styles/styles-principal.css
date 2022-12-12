@@ -1,49 +1,84 @@
-body {
-  background-color: #263159;
+.menu-horizontal {
+  margin-right: 1%;
 }
-body header {
+.menu-horizontal nav ul {
+  display: flex;
+}
+.menu-horizontal nav ul li {
+  display: block;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #263159;
+  margin: 1%;
+}
+.menu-horizontal nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+}
+.busqueda #search-button {
+  margin-right: 1%;
+  margin-left: 3%;
+}
+.busqueda #search-button img {
+  width: 25px;
+  height: 25px;
+}
+.busqueda #search-text {
+  display: none;
+}
+.busqueda img {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-vertical {
+  margin-right: 2%;
+}
+.menu-vertical nav ul li {
+  display: block;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #263159;
+  margin: 10%;
+}
+.menu-vertical nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
   background-color: #495579;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body header > img {
+header #hamburger-menu {
+  margin-right: 1%;
+}
+header #hamburger-menu .hamburger {
+  width: 50px;
+  height: 50px;
+}
+
+header > img {
   width: 100px;
   height: 100px;
 }
-body .busqueda {
-  display: flex;
-  align-items: center;
-}
-body .busqueda #search-button {
-  margin-right: 1%;
-  margin-left: 3%;
-}
-body .busqueda #search-button img {
-  width: 25px;
-  height: 25px;
-}
-body .busqueda #search-text {
-  display: none;
-}
-body .busqueda img {
-  width: 100px;
-  height: 100px;
-}
-body .menu {
-  margin-right: 1%;
-}
-body .menu nav ul {
-  display: flex;
-}
-body .menu nav ul li {
-  display: block;
-  float: left;
-  border: 1px solid rgb(255, 255, 255);
+
+body {
   background-color: #263159;
-  margin: 1%;
 }
-body .menu nav ul li a {
-  text-decoration: none;
-  color: white;
+
+@media (max-width: 950px) {
+  .menu-horizontal {
+    display: none;
+  }
+}
+@media (min-width: 950px) {
+  #hamburger-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=styles-principal.css.map */

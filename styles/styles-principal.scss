@@ -1,57 +1,28 @@
+@import 'menu-horizontal', 'busqueda', 'menu-vertical', 'cabecera';
+
 $colores: (
     "primario": #495579,
     "fondo":  #263159,
     "fuente": #FFFF
 );
 
+@include menu-horizontal($colores);
+@include busqueda();
+@include menu-vertical($colores);
+@include cabecera($colores);
+
 body {
     background-color: map-get($colores, "fondo");
-    header {
-        background-color: map-get($colores, "primario");
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+    .menu-horizontal {
+        display: none;
     }
-    header > img {
-        width: 100px;
-        height: 100px;
-    }
-    .busqueda {
-        display: flex;
-        align-items: center;
-        #search-button {
-            img {
-                width: 25px;
-                height: 25px;
-            }
-            margin-right: 1%;
-            margin-left: 3%;
-        }
-        #search-text {
-            display: none;
-        }
-        img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-    .menu {
-        margin-right: 1%;
-        nav {
-            ul {
-                display: flex;
-                li {
-                    display: block;
-                    float: left;
-                    border: 1px solid rgb(255, 255, 255);
-                    background-color: map-get($colores, "fondo");
-                    margin: 1%;
-                    a {
-                        text-decoration: none;
-                        color: map-get($colores, "fuente");
-                    }
-                }
-            } 
-        }
+}
+
+@media (min-width: 950px) {
+    #hamburger-menu {
+        display: none;
     }
 }
