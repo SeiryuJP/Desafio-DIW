@@ -13,8 +13,17 @@
             text-align: center;
             color: map-get($colores, "fuente");
             .rating {
+                margin-top: 20%;
                 display: grid;
                 float: right;
+            }
+            .edit {
+                margin-top: 50%;
+                float: right;
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
             }
         }
     }
