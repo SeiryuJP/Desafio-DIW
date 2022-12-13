@@ -1,0 +1,75 @@
+@mixin nuevo-itinerario($colores) {
+    .cuerpo {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        margin: 1%;
+    }
+    .titulo {
+        color: map-get($colores, "fuente");
+        text-align: center;
+        hr {
+            width: 50em;
+            border: none;
+            height: 2px;
+            background-color: map-get($colores, "primario");
+        }
+        input {
+            height: 2em;
+            width: 80%;
+        }
+        h3 {
+            margin: 0;
+        }
+    }
+    .cuerpo2 {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 15% 1% 82%;
+        margin-bottom: 1%;
+    }
+    .camara {
+        padding: 2em;
+        background-color: white;
+        img {
+            height: 2em;
+            width: 2em;
+        }
+    }
+    .centro {
+        justify-self: start;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        img {
+            height: 3em;
+            width: 3em;
+        }
+        img:last-of-type {
+            justify-self: end;
+        }
+        input {
+            height: 2em;
+            width: 50em;
+        }
+    }
+    .area-texto {
+        width: 50em;
+        height: 10em;
+        textarea {
+            width: 100%;
+            height: 100%;
+        }
+        margin-bottom: 2%;
+    }
+    .agregar {
+        background-color: map-get($colores, "primario");
+        padding: 10em 24em;
+        img {
+            height: 3em;
+            width: 3em;
+        }
+    }
+}

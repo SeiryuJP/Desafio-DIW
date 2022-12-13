@@ -5,6 +5,7 @@
         justify-content: space-evenly;
         justify-items: center;
         .articulo {
+            margin-bottom: 5%;
             justify-content: center;
             img {
                 height: 150px;
@@ -24,6 +25,12 @@
                     height: 30px;
                     width: 30px;
                 }
+            }
+            h4 {
+                margin: 0;
+            }
+            h5 {
+                margin-top: 1%;
             }
         }
     }
